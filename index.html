@@ -9,7 +9,7 @@
 
 <meta
 name="description"
-content="Watchora is a free, non-commercial iOS app for tracking anime, movies, and TV series."
+content="Watchora is a free, local-first iOS app for personally tracking anime, movies, and TV series."
 
 >
 
@@ -41,7 +41,7 @@ content="Watchora is a free, non-commercial iOS app for tracking anime, movies, 
     }
 
     main {
-      width: min(680px, 100%);
+      width: min(720px, 100%);
       padding: 48px;
       border: 1px solid color-mix(in srgb, CanvasText 14%, transparent);
       border-radius: 28px;
@@ -67,7 +67,7 @@ content="Watchora is a free, non-commercial iOS app for tracking anime, movies, 
 
     .summary {
       margin: 24px 0 0;
-      max-width: 560px;
+      max-width: 580px;
       font-size: 1.18rem;
       line-height: 1.65;
       opacity: 0.82;
@@ -78,7 +78,7 @@ content="Watchora is a free, non-commercial iOS app for tracking anime, movies, 
     }
 
     h2 {
-      margin-bottom: 12px;
+      margin: 0 0 12px;
       font-size: 1rem;
     }
 
@@ -105,7 +105,7 @@ content="Watchora is a free, non-commercial iOS app for tracking anime, movies, 
       width: 9px;
       height: 9px;
       border-radius: 50%;
-      background: #f5a623;
+      background: #34c759;
     }
 
     footer {
@@ -113,14 +113,36 @@ content="Watchora is a free, non-commercial iOS app for tracking anime, movies, 
       padding-top: 22px;
       border-top: 1px solid color-mix(in srgb, CanvasText 12%, transparent);
       font-size: 0.88rem;
-      line-height: 1.6;
-      opacity: 0.58;
+      line-height: 1.65;
+      opacity: 0.68;
+    }
+
+    footer p {
+      margin: 0 0 12px;
+    }
+
+    footer p:last-child {
+      margin-bottom: 0;
+    }
+
+    a {
+      color: #0a84ff;
+      text-decoration-thickness: 0.08em;
+      text-underline-offset: 0.18em;
     }
 
     @media (max-width: 560px) {
+      body {
+        padding: 18px;
+      }
+
       main {
         padding: 32px 24px;
         border-radius: 22px;
+      }
+
+      .summary {
+        font-size: 1.05rem;
       }
     }
   </style>
@@ -139,27 +161,51 @@ content="Watchora is a free, non-commercial iOS app for tracking anime, movies, 
 </p>
 
 <section aria-labelledby="features-heading">
-  <h2 id="features-heading">Planned features</h2>
+  <h2 id="features-heading">Features</h2>
 
   <ul>
-    <li>One library for anime, movies, and TV series</li>
+    <li>One personal library for anime, movies, and TV series</li>
     <li>Watch status and episode progress</li>
-    <li>Personal ratings and notes</li>
-    <li>Manual media entries</li>
+    <li>Personal ratings and local notes</li>
+    <li>Custom lists for organizing saved media</li>
     <li>Searchable titles, metadata, and poster artwork</li>
+    <li>Discover recommendations powered by remote media metadata</li>
+    <li>Local-first storage with no required account</li>
+  </ul>
+</section>
+
+<section aria-labelledby="privacy-heading">
+  <h2 id="privacy-heading">Privacy-first by design</h2>
+
+  <ul>
+    <li>No advertisements</li>
+    <li>No subscriptions or in-app purchases</li>
+    <li>No user accounts required</li>
+    <li>No tracking across apps or websites</li>
+    <li>Your library, lists, ratings, progress, and notes stay on your device</li>
   </ul>
 </section>
 
 <div class="status">
   <span class="dot" aria-hidden="true"></span>
-  Currently in development
+  Preparing for version 1.0
 </div>
 
 <footer>
-  Watchora is planned as a free, non-commercial application with
-  no advertisements, subscriptions, or in-app purchases.
-  TMDb API integration is planned for media metadata and poster images
-  but has not yet been enabled.
+  <p>
+    Watchora is planned as a free, non-commercial application with no
+    advertisements, subscriptions, or in-app purchases.
+  </p>
+
+  <p>
+    Watchora uses TMDb metadata and poster images through the Watchora
+    backend. This product uses the TMDb API but is not endorsed or certified
+    by TMDb.
+  </p>
+
+  <p>
+    <a href="privacy.html">Privacy Policy</a>
+  </p>
 </footer>
 ```
 
